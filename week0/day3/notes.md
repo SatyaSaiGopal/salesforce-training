@@ -1,5 +1,4 @@
-
-# Day 3 Summary: Data Modeling, Formulas, and Validations
+#Data Modeling, Formulas, and Validations
 
 ## 1. Core Concepts
 * **App:** A set of objects, tabs, and other items all working together in one bundle to serve a business process.
@@ -32,22 +31,3 @@
 | :--- | :--- | :--- | :--- |
 | **Formula Field** | Automation | **Calculates** data automatically. | `EndDate - TODAY()` |
 | **Validation Rule** | Prevention | **Blocks** bad data from being saved. | `Age < 18` |
-
-### Task 2: Formula Thinking
-1.  **Full Name:** `FirstName & " " & LastName` (Consistently formats names).
-2.  **Remaining Seats:** `Total_Seats__c - Enrolled_Students__c` (Real-time availability).
-3.  **Course Duration:** `End_Date__c - Start_Date__c` (Automatic length calculation).
-
-### Task 3: Validation Rule Thinking
-1.  **Restrict Email:** `NOT(CONTAINS(Email__c, "@college.edu"))` (Ensures official email use).
-2.  **Age Check:** `Age__c < 0` (Prevents impossible physical data).
-3.  **Seat Limit:** `Enrolled_Students__c > Total_Seats__c` (Prevents classroom overcrowding).
-
----
-
-## 5. Reflection: Why Structured Data Matters (Task 4)
-Companies cannot rely on Excel because:
-1.  **Data Integrity:** Structured data ensures that "Department A" is spelled the same way everywhere.
-2.  **Security:** You can restrict who sees specific fields (like grades) within an object.
-3.  **Automation:** Unlike spreadsheets, Salesforce can automatically trigger emails or calculations when data changes.
-4.  **Relationships:** You can instantly see all students related to a course without searching through multiple files.
